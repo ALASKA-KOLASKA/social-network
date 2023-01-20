@@ -1,15 +1,19 @@
 import React from "react";
-import './App.css';
+import s from './App.module.css';
 import Header from "./components/Header/Header.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Profile from "./components/Profile/Profile.jsx";
+import Dialogs from "./components/Dialogs/Dialogs.jsx";
 
 const App = () => {
     return (
-        <div className='app-wrapper'>
+        <div className={s.app_wrapper}>
             <Header/>
             <Navbar/>
-            <Profile/>
+            {/*<Profile/>*/}
+            <div className={s.app_wrapper_content}>
+                <Dialogs/>
+            </div>
         </div>
     );
 }
