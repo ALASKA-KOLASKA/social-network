@@ -13,3 +13,7 @@
     height: 30px;
 }
 
+.div:hover{
+    -webkit-text-stroke: 2px white;
+}
+

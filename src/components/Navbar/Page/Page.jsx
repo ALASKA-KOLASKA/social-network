@@ -6,7 +6,7 @@ import s from "./Page.module.css"
 
 const Page = (props) => {
     return (
-            <div>
+            <div className={s.div}>
                 <img className={s.img} src={props.src} />
                 <NavLink to={props.to} className={activeColor}> {props.page} </NavLink>
             </div>
