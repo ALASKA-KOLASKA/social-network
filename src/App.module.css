@@ -17,3 +17,21 @@
   grid-area: c;
   background-color: cornflowerblue;
 }
+
+.library_background {
+  grid-area: c;
+  background:
+
+          url('https://isaac-items.ru/images/background/corner-left-top.png') top left no-repeat,
+          url('https://isaac-items.ru/images/background/corner-right-top.png') top right no-repeat,
+          url('https://isaac-items.ru/images/background/border-top.png') top left repeat-X,
+
+          url('https://isaac-items.ru/images/background/corner-left-bottom.png') bottom left no-repeat,
+          url('https://isaac-items.ru/images/background/corner-right-bottom.png') bottom right no-repeat,
+          url('https://isaac-items.ru/images/background/border-bottom.png') bottom left repeat-X,
+          url('https://isaac-items.ru/images/background/border-left.png') top left repeat-Y,
+          url('https://isaac-items.ru/images/background/border-right.png') top right repeat-Y,
+          url('https://isaac-items.ru/images/background/main.png') repeat;
+  padding-top:20px;
+  min-height: calc(100vh - 160px);
+}

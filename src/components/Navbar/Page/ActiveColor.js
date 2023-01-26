@@ -1,4 +1,4 @@
-import s from "./Navbar.module.css";
+import s from "./Page.module.css";
 
 const activeColor = ({isActive}) => isActive ? s.active : s.item
 

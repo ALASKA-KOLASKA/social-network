@@ -1,0 +1,15 @@
+.item {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: gold;
+    text-decoration: none;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+}
+

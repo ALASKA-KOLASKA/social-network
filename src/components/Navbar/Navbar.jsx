@@ -1,27 +1,40 @@
 import React from 'react';
 import s from './Navbar.module.css';
-import {NavLink} from "react-router-dom";
-import activeColor from "./ActiveColor.js";
+import Page from "./Page/Page.jsx";
 
 
 const Navbar = () => {
     return (
         <nav className={s.nav}>
-            <div>
-                <NavLink to="/profile" className={activeColor}> Profile </NavLink>
-            </div>
-            <div>
-                <NavLink to="/dialogs" className={activeColor}> Messages </NavLink>
-            </div>
-            <div>
-                <NavLink to="/news" className={activeColor}> News </NavLink>
-            </div>
-            <div>
-                <NavLink to="/music" className={activeColor}> Music </NavLink>
-            </div>
-            <div>
-                <NavLink to="/settings" className={activeColor}> Settings </NavLink>
-            </div>
+            <Page
+                src='https://www.jetbrains.com/space/img/extend-section/icons/applications.svg'
+                to="/profile"
+                page="Profile"
+            />
+
+            <Page
+                src='https://www.jetbrains.com/space/img/extend-section/icons/applications.svg'
+                to="/dialogs"
+                page="Messages"
+            />
+
+            <Page
+                src='https://www.jetbrains.com/space/img/extend-section/icons/applications.svg'
+                to="/news"
+                page="News"
+            />
+
+            <Page
+                src='https://www.jetbrains.com/space/img/extend-section/icons/applications.svg'
+                to="/music"
+                page="Music"
+            />
+
+            <Page
+                src='https://www.jetbrains.com/space/img/extend-section/icons/applications.svg'
+                to="/settings"
+                page="Settings"
+            />
         </nav>
     )
 }

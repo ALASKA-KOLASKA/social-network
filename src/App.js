@@ -2,12 +2,12 @@ import React from "react";
 import s from './App.module.css';
 import Header from "./components/Header/Header.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Profile from "./components/Profile/Profile.jsx";
-import Dialogs from "./components/Dialogs/Dialogs.jsx";
+import Profile from "./components/Content/Profile/Profile.jsx";
+import Dialogs from "./components/Content/Dialogs/Dialogs.jsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import News from "./components/News/News.jsx";
-import Music from "./components/Music/Music.jsx";
-import Settings from "./components/Settings/Settings.jsx";
+import News from "./components/Content/News/News.jsx";
+import Music from "./components/Content/Music/Music.jsx";
+import Settings from "./components/Content/Settings/Settings.jsx";
 
 const App = () => {
     return (
@@ -15,7 +15,7 @@ const App = () => {
             <div className={s.app_wrapper}>
                 <Header/>
                 <Navbar/>
-                <div className={s.app_wrapper_content}>
+                <div className={s.library_background}>
                     <Routes>
                         <Route path='/dialogs' element={<Dialogs/>}/>
                         <Route path='/profile' element={<Profile/>}/>
